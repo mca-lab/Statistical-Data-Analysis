@@ -12,7 +12,7 @@ Follow these steps carefully:
 >    ```
 >
 > 2. **Add your R script (solution)**
->    Save your R file in the appropriate folder (e.g., `Week1_Desc_Stats/`).
+>    Save your R file in the appropriate folder (e.g., `DescStats/`).
 >    Use a clear filename such as `yourname_DescStats.R`.
 >
 > 3. **Commit and push your changes**
