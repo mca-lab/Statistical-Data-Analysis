@@ -1,6 +1,7 @@
 **Instructions for Students**
 
 * Each student will submit their R lab solutions using their own branch.
+
 Follow these steps carefully:
 
 > 1. **Create a branch with your name**
@@ -28,6 +29,7 @@ Follow these steps carefully:
 >    * Click **Compare & pull request**.
 >    * Make sure the base branch is **main**, and your compare branch is **yourname**.
 >    * Write a short description of your work.
+>    * add a reviewer
 >    * Submit the PR.
 >
 > 5. **Important rules:**
