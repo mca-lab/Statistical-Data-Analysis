@@ -1,0 +1,53 @@
+# R specific ------------------------------------------------------
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session data files
+.RData
+
+# User-specific RStudio files
+.Ruserdata
+.Rproj.user/
+
+# R project files
+*.Rproj
+
+# Cache and temporary data
+.Rcheck/
+.Rprofile
+.Renviron
+.Rbuildignore
+*.RDataTmp
+*.Rout
+*.Rout.save
+*.Rout.fail
+
+# Compiled or generated files
+*.o
+*.so
+*.dll
+*.log
+*.csv
+*.tsv
+*.xlsx
+*.pdf
+
+# OS / Editor specific -------------------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VSCode / JetBrains
+.vscode/
+.idea/
+
+*.swp
+*.bak
+*.tmp
+
