@@ -1,7 +1,5 @@
-
 **Instructions for Students**
 
-Contribution Instructions
 * Each student will submit their R lab solutions using their own branch.
 Follow these steps carefully:
 
