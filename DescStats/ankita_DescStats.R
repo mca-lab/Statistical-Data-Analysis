@@ -144,3 +144,33 @@ set.seed(456)
    )
  
    lines(x_vals, normal_curve, col = "red", lwd = 2)
+
+   
+   
+   
+   
+# Question 5
+   # Linear Regression using iris data
+    # Predict Petal.Length from Sepal.Length
+     
+     # Load built-in dataset
+      data(iris)
+   
+   # Fit linear regression model
+    model <- lm(Petal.Length ~ Sepal.Length, data = iris)
+   
+   # Display model summary
+    summary(model)
+   
+   # Scatter plot of data
+    plot(iris$Sepal.Length, iris$Petal.Length,
+                main = "Regression of Petal Length on Sepal Length",
+                xlab = "Sepal Length",
+                ylab = "Petal Length",
+                pch = 19,
+                col = "blue")
+   
+     # Add regression line
+      abline(model, col = "red", lwd = 2)
+   
+   
