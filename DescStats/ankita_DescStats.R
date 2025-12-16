@@ -173,4 +173,77 @@ set.seed(456)
      # Add regression line
       abline(model, col = "red", lwd = 2)
    
-   
+# question 6
+      # Matrix Operations in R
+      
+      # Create two invertible numeric matrices
+      A <- matrix(c(2, 1,
+                    1, 3),
+                  nrow = 2, byrow = TRUE)
+      
+      B <- matrix(c(4, 2,
+                    3, 1),
+                  nrow = 2, byrow = TRUE)
+      
+      # Display matrices
+      cat("Matrix A:\n")
+      print(A)
+      
+      cat("\nMatrix B:\n")
+      print(B)
+      
+      # -------------------------------
+      # Matrix Addition
+      # -------------------------------
+      add_AB <- A + B
+      cat("\nMatrix Addition (A + B):\n")
+      print(add_AB)
+      
+      # -------------------------------
+      # Matrix Multiplication
+      # -------------------------------
+      mul_AB <- A %*% B
+      mul_BA <- B %*% A
+      
+      cat("\nMatrix Multiplication (A %*% B):\n")
+      print(mul_AB)
+      
+      cat("\nMatrix Multiplication (B %*% A):\n")
+      print(mul_BA)
+      
+      # -------------------------------
+      # Transpose
+      # -------------------------------
+      t_A <- t(A)
+      t_B <- t(B)
+      
+      cat("\nTranspose of Matrix A:\n")
+      print(t_A)
+      
+      cat("\nTranspose of Matrix B:\n")
+      print(t_B)
+      
+      # -------------------------------
+      # Determinant
+      # -------------------------------
+      det_A <- det(A)
+      det_B <- det(B)
+      
+      cat("\nDeterminant of Matrix A:\n")
+      print(det_A)
+      
+      cat("\nDeterminant of Matrix B:\n")
+      print(det_B)
+      
+    
+      # Inverse
+      # -------------------------------
+      inv_A <- solve(A)
+      inv_B <- solve(B)
+      
+      cat("\nInverse of Matrix A:\n")
+      print(inv_A)
+      
+      cat("\nInverse of Matrix B:\n")
+      print(inv_B)
+      
