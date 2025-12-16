@@ -274,4 +274,93 @@ set.seed(456)
       
       # VIF calculation
        vif(model)
+       
+       
+       
+       
+       
+       
+# Question 8
+       # 1. Normal Distribution
+     
+        # Parameters
+          mu <- 0        # mean
+        sigma <- 1     # standard deviation
+        n_norm <- 1000 # sample size
+        
+          # Generate random samples
+          norm_samples <- rnorm(n_norm, mean = mu, sd = sigma)
+        
+          # Plot histogram with density
+          hist(norm_samples, probability = TRUE, col = "lightblue",
+                      main = "Normal Distribution (Histogram)",
+                      xlab = "Value")
+        # Overlay theoretical PDF
+          x_vals <- seq(min(norm_samples), max(norm_samples), length.out = 200)
+        lines(x_vals, dnorm(x_vals, mean = mu, sd = sigma), col = "red", lwd = 2)
+        
+          # Compute probabilities
+          prob1 <- pnorm(1.0, mean = mu, sd = sigma)    # P(X <= 1)
+        prob2 <- pnorm(-1.0, mean = mu, sd = sigma)   # P(X <= -1)
+        cat("Normal Distribution Probabilities:\n")
+       
+          cat("P(X <= 1) =", round(prob1, 4), "\n")
+        
+        cat("P(X <= -1) =", round(prob2, 4), "\n\n")
       
+       
+        #2 Binomial Distribution
+        
+        # Parameters
+         size <- 10   # number of trials
+         prob <- 0.5  # success probability
+         n_binom <- 1000
+         
+          
+           # Generate random samples
+           binom_samples <- rbinom(n_binom, size = size, prob = prob)
+         
+          
+           # Histogram
+           hist(binom_samples, breaks = 0:(size+1)-0.5, col = "lightgreen",
+                       main = "Binomial Distribution (Histogram)",
+                       xlab = "Number of Successes")
+         
+          
+           # PMF values for k = 3, 7
+           pmf3 <- dbinom(3, size = size, prob = prob)
+         pmf7 <- dbinom(7, size = size, prob = prob)
+         cat("Binomial Distribution PMFs:\n")
+    
+           cat("P(X = 3) =", round(pmf3, 4), "\n")
+       
+         cat("P(X = 7) =", round(pmf7, 4), "\n\n")
+        
+        
+         #3 Poisson Distribution
+         
+          # Parameters
+            lambda <- 4
+          n_poisson <- 1000
+          
+           
+            # Generate random samples
+            pois_samples <- rpois(n_poisson, lambda = lambda)
+          
+           
+           # Histogram
+            hist(pois_samples, breaks = -0.5:max(pois_samples)+0.5, col = "lightpink",
+                        main = "Poisson Distribution (Histogram)",
+                        xlab = "Number of Events")
+          
+           
+            # PMF values for k = 2, 6
+            pmf2 <- dpois(2, lambda)
+          pmf6 <- dpois(6, lambda)
+          cat("Poisson Distribution PMFs:\n")
+         
+           
+            cat("P(X = 2) =", round(pmf2, 4), "\n")
+         
+          cat("P(X = 6) =", round(pmf6, 4), "\n")
+         
