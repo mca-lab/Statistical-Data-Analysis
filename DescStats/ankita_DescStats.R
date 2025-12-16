@@ -89,3 +89,58 @@ posterior_percent <- posterior_prob * 100
 cat("Posterior probability that a person has the disease given a positive test:", posterior_prob, "\n")
 cat("In percentage:", posterior_percent, "%\n")
 
+# Question 4 
+#LAW OF LARGE NUMBERS (LLN) 
+ set.seed(123) 
+ n <- 10000
+ p <- 0.7   # biased coin
+ # Generate coin tosses (1 = head, 0 = tail)
+   coin_tosses <- rbinom(n, size = 1, prob = p)
+# Running sample mean
+running_mean <- cumsum(coin_tosses) / seq_len(n)
+# Plot running mean
+ plot(running_mean,
+             type = "l",
+             col = "blue",
+             lwd = 2,
+             xlab = "Number of Tosses",
+             ylab = "Running Sample Mean",
+             main = "Law of Large Numbers (Biased Coin)")
+# True probability line
+abline(h = p, col = "red", lwd = 2, lty = 2) 
+legend("right",
+                legend = c("Running Mean", "True Probability"),
+                col = c("blue", "red"),
+                lty = c(1, 2),
+                lwd = 2)
+
+# CENTRAL LIMIT THEOREM (CLT) 
+set.seed(456)
+ 
+   lambda <- 4
+ sample_size <- 50
+ num_samples <- 1000
+ 
+   # Generate 1000 sample means using replicate()
+   sample_means <- replicate(
+         num_samples,
+         mean(rpois(sample_size, lambda))
+     )
+
+   # Plot histogram of sample means
+   hist(sample_means,
+               probability = TRUE,
+               col = "lightgray",
+               border = "white",
+               main = "Central Limit Theorem (Poisson Distribution)",
+               xlab = "Sample Means")
+ 
+   # Overlay normal distribution curve
+   x_vals <- seq(min(sample_means), max(sample_means), length.out = 200)
+ normal_curve <- dnorm(
+       x_vals,
+       mean = mean(sample_means),
+       sd = sd(sample_means)
+   )
+ 
+   lines(x_vals, normal_curve, col = "red", lwd = 2)
