@@ -69,7 +69,7 @@ boxplot(iris$Sepal.Width,
 
 
 
-# Ques 3
+# Question solved 3
 # Parameters
 prior_disease <- 0.01        # P(D), prior probability of disease (5%)
 true_positive <- 0.95        # P(T+|D), sensitivity
