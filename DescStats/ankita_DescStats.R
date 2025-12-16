@@ -247,3 +247,31 @@ set.seed(456)
       cat("\nInverse of Matrix B:\n")
       print(inv_B)
       
+      
+
+      
+# Question 7
+      # Install car package if not already installed
+       if (!require(car)) {
+             install.packages("car")
+             library(car)
+         }
+      set.seed(123)
+       n <- 100 
+      # Simulate highly correlated predictors
+       X1 <- rnorm(n, mean = 50, sd = 10)
+       X2 <- X1 + rnorm(n, mean = 0, sd = 1)
+      # Response variable
+       Y <- 5 + 2 * X1 + 3 * X2 + rnorm(n, mean = 0, sd = 5) 
+       data <- data.frame(Y, X1, X2)
+      # Correlation
+       cor(data$X1, data$X2)
+      
+      # Multiple regression
+       model <- lm(Y ~ X1 + X2, data = data)
+       summary(model)
+      
+      
+      # VIF calculation
+       vif(model)
+      
