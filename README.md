@@ -1,6 +1,6 @@
 # Statistical Data Analysis – R Lab Practicals
 
-This repository contains **statistical data analysis practical implementations using R programming**, developed as part of the **Statistical Data Analysis laboratory coursework**.  
+This contains **statistical data analysis practical implementations using R programming**, developed as part of the **Statistical Data Analysis laboratory coursework**.  
 The project demonstrates core statistical concepts through hands-on experiments, simulations, and data visualizations using R.
 
 ---
@@ -121,7 +121,7 @@ Statistical-Data-Analysis/
 
 - **Programming Language:** R  
 - **IDE:** RStudio / R Console  
-- **Libraries Used:** `car`  
+  
 
 ### Key Concepts
 - Descriptive Statistics  
