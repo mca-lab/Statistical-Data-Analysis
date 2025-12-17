@@ -1,18 +1,27 @@
 # Statistical Data Analysis – R Lab Practicals
 
-This repository contains **Statistical Data Analysis (SDA) practical implementations using R programming**.  
+This repository contains **statistical data analysis practical implementations using R programming**, developed as part of the **Statistical Data Analysis laboratory coursework**.  
+The project demonstrates core statistical concepts through hands-on experiments, simulations, and data visualizations using R.
 
 ---
 
-## 👩‍🎓 Student Information
+## 🎯 Objective
 
-- **Name:** Khushi  
-- **GitHub Username:** khushi-kr  
-- **Branch Name:** `Khushi`
+To apply statistical theories and analytical techniques using R programming, including descriptive statistics, probability distributions, regression analysis, sampling theory, and matrix operations.
 
 ---
 
 ## 📁 Repository Structure
+
+```text
+Statistical-Data-Analysis/
+│
+├── DescStats/
+│   └── neemabartistats.R
+│
+├── README.md
+├── LICENSE
+└── .gitignore
 
 ```text
 Statistical-Data-Analysis/
