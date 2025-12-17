@@ -31,5 +31,45 @@ posterior <- (true_pos * prior) /
 
 posterior
 
+# Exercise 4
+p <- 0.3     # biased coin, P(heads)=0.3
+n <- 5000
+samples <- rbinom(n, size=1, prob=p)
+running_mean <- cumsum(samples) / 1:n
+plot(running_mean, type="l",
+     xlab="Number of trials",
+     ylab="Running sample mean",
+     main="Law of Large Numbers")
+abline(h = p, col="red")   # true mean
+
+m <- 1000      # generate 1000 sample means
+sample_means <- replicate(m, mean(rbinom(40, 1, p)))
+hist(sample_means, freq = FALSE,
+     main = "Sampling Distribution of Mean (CLT)")
+curve(dnorm(x, mean = p, sd = sqrt(p*(1-p)/40)),
+      add = TRUE, col="blue", lwd=2)
+
+#Exercise 5
+model <- lm(Petal.Length ~ Sepal.Length, data = iris)
+summary(model)
+plot(iris$Sepal.Length, iris$Petal.Length,
+     main = "Petal.Length vs Sepal.Length",
+     xlab = "Sepal Length",
+     ylab = "Petal Length")
+abline(model, col = "red", lwd = 2)
+
+#Exercise 6
+A <- matrix(c(1,2,3,4), nrow = 2)
+B <- matrix(c(5,6,7,8), nrow = 2)
+
+A
+B
+A + B
+A %*% B
+t(A)
+det(A)
+solve(A)
+
+#
 
 
