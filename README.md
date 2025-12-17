@@ -22,6 +22,7 @@ Statistical-Data-Analysis/
 │
 ├── README.md
 
+```
 ---
 
 ## 🧪 List of Practical Exercises
