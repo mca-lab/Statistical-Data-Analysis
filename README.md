@@ -1,150 +1,162 @@
-📁 My Work: DescStats/neemabartistats.R
+# Statistical Data Analysis – R Lab Practicals
 
-The folder DescStats/ contains my complete R lab solution file
-neemabartistats.R.
+This repository contains **statistical data analysis practical implementations using R programming**, developed as part of the **Statistical Data Analysis laboratory coursework**.  
+The project demonstrates core statistical concepts through hands-on experiments, simulations, and data visualizations using R.
 
-This file includes all required statistical analysis code implemented using R.
-Each section of the script is clearly separated and focuses on a specific statistical concept.
+---
 
-📄 Code Explanation (Section-wise)
-1️⃣ Data Frame Creation & Basic Statistics
+## 🎯 Objective
 
-I created a student dataset using a data frame and performed basic descriptive statistics.
+To apply statistical theories and analytical techniques using R programming, including descriptive statistics, probability distributions, regression analysis, sampling theory, and matrix operations.
 
-Concepts used:
+---
 
-Data frame creation
+## 📁 Repository Structure
 
-Mean of marks
+```text
+Statistical-Data-Analysis/
+│
+├── DescStats/
+│   └── neemabartistats.R
+│
+├── README.md
 
-Maximum age
+🧪 List of Practical Exercises
+🔹 Exercise 1: Student Data Analysis and Conditional Statements
+Created a student data frame containing Name, Age, and Marks
 
-Conditional grading using ifelse()
+Calculated mean of marks
 
-Purpose:
-To demonstrate fundamental data handling and conditional logic in R.
+Identified maximum age
 
-2️⃣ Descriptive Statistics on Iris Dataset
+Assigned grades using conditional logic (ifelse)
 
-I used the built-in iris dataset to perform exploratory data analysis.
+🔹 Exercise 2: Descriptive Statistics Using Iris Dataset
+Analyzed dataset dimensions and structure
 
-Operations performed:
+Calculated:
 
-Number of rows and columns
+Mean
 
-Mean, median, variance, standard deviation
+Median
 
-Frequency table of species
+Variance
 
-Histogram and boxplot
+Standard deviation
 
-Purpose:
-To analyze real-world numerical data and visualize distributions.
+Created frequency table for species
 
-3️⃣ Bayesian Probability Calculation
+Visualized data using:
 
-I implemented a simple Bayesian inference example to calculate posterior probability.
+Histogram
 
-Concepts used:
+Boxplot
 
-Prior probability
+🔹 Exercise 3: Bayes’ Theorem – Posterior Probability Calculation
+Defined prior probability
 
-Sensitivity and false positive rate
+Used sensitivity and false positive rate
 
-Bayes’ theorem formula
+Calculated posterior probability using Bayes’ theorem
 
-Purpose:
-To demonstrate probabilistic reasoning using R.
+🔹 Exercise 4: Law of Large Numbers (LLN) and Central Limit Theorem (CLT)
+Law of Large Numbers (LLN)
 
-4️⃣ Law of Large Numbers (LLN) & Central Limit Theorem (CLT)
+Simulated biased coin toss experiments
 
-I simulated biased coin toss experiments using random sampling.
+Visualized convergence of the running sample mean
 
-LLN:
+Central Limit Theorem (CLT)
 
-Generated binary outcomes using rbinom()
+Generated sampling distributions of sample means
 
-Plotted running mean convergence
+Demonstrated normal distribution approximation using simulations
 
-CLT:
+🔹 Exercise 5: Simple Linear Regression Analysis
+Built a linear regression model using the iris dataset
 
-Generated multiple sample means
+Studied the relationship between:
 
-Plotted histogram of sample means
+Sepal Length
 
-Overlaid normal distribution curve
+Petal Length
 
-Purpose:
-To visually demonstrate two fundamental statistical laws.
+Visualized the regression line
 
-5️⃣ Linear Regression Analysis
+Analyzed and interpreted the model summary
 
-I built a linear regression model using the iris dataset.
-
-Operations performed:
-
-Model creation using lm()
-
-Summary interpretation
-
-Scatter plot with regression line
-
-Purpose:
-To understand relationships between variables using regression.
-
-6️⃣ Matrix Operations
-
-I performed basic matrix algebra operations.
-
-Operations included:
+🔹 Exercise 6: Matrix Operations in R
+Matrix creation and manipulation
 
 Matrix addition
 
 Matrix multiplication
 
-Transpose
+Transpose of matrix
 
-Determinant
+Determinant calculation
 
-Inverse
+Inverse of matrix
 
-Purpose:
-To demonstrate linear algebra concepts used in data analysis and ML.
+🔹 Exercise 7: Multicollinearity and Variance Inflation Factor (VIF)
+Generated correlated predictor variables
 
-7️⃣ Multicollinearity Analysis
+Built multiple linear regression model
 
-I generated correlated predictors and analyzed multicollinearity.
+Detected multicollinearity using Variance Inflation Factor (VIF)
 
-Concepts used:
+Used the car package for analysis
 
-Correlation
-
-Multiple linear regression
-
-Variance Inflation Factor (VIF)
-
-Purpose:
-To understand predictor dependency issues in regression models.
-
-8️⃣ Probability Distributions
-
-I analyzed three major probability distributions.
-
-Distributions covered:
-
+🔹 Exercise 8: Probability Distributions
 Normal Distribution
+
+Generated normally distributed data
+
+Visualized distribution using histogram and PDF overlay
+
+Calculated probabilities using pnorm
 
 Binomial Distribution
 
+Simulated binomial outcomes
+
+Visualized probability mass function (PMF)
+
+Calculated probabilities using dbinom and pbinom
+
 Poisson Distribution
 
-Operations performed:
+Simulated Poisson-distributed data
 
-Histogram visualization
+Visualized probability mass function (PMF)
 
-PMF/PDF overlays
+Calculated probabilities using dpois and ppois
 
-Probability calculations using pnorm, dbinom, dpois
+🛠️ Tools & Technologies Used
+Programming Language: R
 
-Purpose:
-To understand distribution behavior and probability estimation.
+IDE: RStudio / R Console
+
+Libraries Used: car
+
+📚 Key Concepts Covered
+Descriptive Statistics
+
+Probability Theory
+
+Sampling Theory
+
+Regression Analysis
+
+Multicollinearity
+
+Matrix Algebra
+
+✅ Conclusion
+This project demonstrates the practical implementation of fundamental statistical concepts using R programming.
+It reinforces theoretical knowledge through simulations, data analysis, regression modeling, and visualization of probability distributions.
+
+
+
+
+
