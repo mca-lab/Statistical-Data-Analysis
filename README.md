@@ -1,6 +1,6 @@
 # Statistical Data Analysis – R Lab Practicals
 
-This repository contains **Statistical Data Analysis practical implementations using R programming**.
+This repository contains **Statistical Data Analysis practical implementations using R programming**.  
 
 ---
 
@@ -125,4 +125,10 @@ Statistical-Data-Analysis/
 - Probability Theory  
 - Regression Analysis  
 - Sampling Theory  
-- Matrix Algebra  
+- Matrix Algebra
+ 
+## ✅ Conclusion
+
+This project demonstrates the practical implementation of fundamental statistical concepts using **R programming**.  
+It reinforces theoretical knowledge through **simulations, data analysis, regression modeling, and visual exploration of probability distributions**.
+
