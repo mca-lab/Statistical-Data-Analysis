@@ -6,7 +6,7 @@ This repository contains **Statistical Data Analysis practical implementations u
 
 ## 👩‍🎓 Student Information
 
-- **Name:** Khushi  
+- **Name:** Khushi Rawat 
 - **GitHub Username:** khushi-kr  
 - **Branch Name:** `Khushi`
 
