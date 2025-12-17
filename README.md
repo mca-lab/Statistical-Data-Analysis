@@ -1,49 +1,32 @@
-**Instructions for Students**
+# Statistical Data Analysis – R Lab
 
-* Each student will submit their R lab solutions using their own branch.
+## Overview
 
-Follow these steps carefully:
+This repository contains R lab work focused on fundamental concepts of **statistical data analysis** using R programming.
 
-> 1. **Create a branch with your name**
->    Example:
->
->    ```bash
->    git checkout -b yourname
->    ```
->
-> 2. **Add your R script (solution)**
->    Save your R file in the appropriate folder (e.g., `DescStats/`).
->    Use a clear filename such as `yourname_DescStats.R`.
->
-> 3. **Commit and push your changes**
->
->    ```bash
->    git add yourname_DescStats.R
->    git commit -m "Added Descriptive statistics solution - yourname"
->    git push origin yourname
->    ```
->
-> 4. **Create a Pull Request (PR)**
->
->    * Go to the GitHub repository in your browser.
->    * Click **Compare & pull request**.
->    * Make sure the base branch is **main**, and your compare branch is **yourname**.
->    * Write a short description of your work.
->    * add a reviewer
->    * Submit the PR.
->
-> 5. **Important rules:**
->
->    * Make changes **only in your own branch**.
->    * **Do NOT** edit or merge into the `main` branch.
->    * You can update your branch later by committing again and pushing.
->
+## What We Learned
 
->
-> *Tip:* Always pull updates from `main` before starting a new lab to stay in sync.
->
-> ```bash
-> git checkout main
-> git pull origin main
-> ```
+- Basics of R programming and data handling  
+- Descriptive statistics (mean, median, variance, standard deviation)  
+- Data visualization using histograms, boxplots, and line plots  
+- Probability distributions (Normal, Binomial, Poisson)  
+- Bayes’ Theorem and conditional probability  
+- Law of Large Numbers and Central Limit Theorem  
+- Simple and multiple linear regression  
+- Multicollinearity and Variance Inflation Factor (VIF)  
+- Matrix operations in R  
 
+## Tools & Techniques
+
+- R base functions and datasets (e.g., `iris`)
+- Statistical simulation and modeling
+- Graphical analysis for interpretation
+
+## Objective
+
+The objective of this lab is to build a strong foundation in **statistical concepts** and their **implementation in R**, preparing students for data analysis and research work.
+
+## Student Information
+
+**Amok Singh**  
+**Branch Name :** Amok  
