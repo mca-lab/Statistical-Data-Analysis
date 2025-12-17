@@ -1,6 +1,6 @@
 # Statistical Data Analysis – R Lab Practicals
 
-This repository contains **Statistical Data Analysis (SDA) practical implementations using R programming**.  
+This repository contains **Statistical Data Analysis practical implementations using R programming**.
 
 ---
 
