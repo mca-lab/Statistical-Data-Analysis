@@ -20,7 +20,7 @@ Statistical-Data-Analysis/
 │   └── neemabartistats.R
 │
 ├── README.md
-
+---
 🧪 List of Practical Exercises
 🔹 Exercise 1: Student Data Analysis and Conditional Statements
 Created a student data frame containing Name, Age, and Marks
