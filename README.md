@@ -17,16 +17,6 @@ To apply statistical theories and analytical techniques using R programming, inc
 Statistical-Data-Analysis/
 │
 ├── DescStats/
-│   └── neemabartistats.R
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-
-```text
-Statistical-Data-Analysis/
-│
-├── DescStats/
 │   └── Khushi_R.R
 │
 ├── README.md
